@@ -9,6 +9,7 @@ copy network settings from iso
 ## after installation
 
 static-ip.md
+git.md
 yay.md
 pkgfile.md
 
