@@ -10,6 +10,8 @@ xfconf-query -c xfwm4 -p /general/wrap_cycle -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/wrap_layout -n -t bool -s false
 xfconf-query -c xfwm4 -p /general/wrap_windows -n -t bool -s false
 
+xfconf-query -c xfwm4 -p /general/raise_with_any_button -n -t bool -s false
+
 exit
 ```
 
