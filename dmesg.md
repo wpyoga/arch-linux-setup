@@ -17,7 +17,7 @@ sudo tee /etc/audit/rules.d/filter-sudo.rules >/dev/null <<EOF
 EOF
 
 sudo auditctl -D
-sudo augenrules --load
+sudo systemctl enable --now auditd.service
 
 exit
 ```
