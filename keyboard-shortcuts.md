@@ -41,7 +41,11 @@ xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Primary><Alt>d' -r
 xfconf-query -c xfce4-keyboard-shortcuts \
   -p '/xfwm4/custom/<Super>d' -n -t string -s show_desktop_key
 
-
+sudo tee /etc/X11/xorg.conf.d/99-dontzap.conf >/dev/null <<EOF
+Section "ServerFlags"
+    Option "DontZap" "true"
+EndSection
+EOF
 
 
 exit
