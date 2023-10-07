@@ -26,9 +26,8 @@ When = PostTransaction
 Exec = /bin/sh -c 'grep -q "HKCU,\"Software\\\Wine\\\FileOpenAssociations\",\"Enable\",2,\"N\"" /usr/share/wine/wine.inf || sed -i "s/\[Services\]/\[Services\]\nHKCU,\"Software\\\Wine\\\FileOpenAssociations\",\"Enable\",2,\"N\"/g" /usr/share/wine/wine.inf'
 EOF
 
-sudo pacman -Sy
-
 sudo pacman -S --needed wine
+yay -S --needed winetricks
 
 exit
 ```
