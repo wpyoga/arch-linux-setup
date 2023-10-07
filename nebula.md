@@ -1,6 +1,7 @@
 `
 ```
 yay -S --needed nebula
+sudo mkdir -p /etc/nebula
 sudo chmod 700 /etc/nebula
 
 exit
