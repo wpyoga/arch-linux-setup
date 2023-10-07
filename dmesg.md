@@ -19,6 +19,12 @@ EOF
 sudo auditctl -D
 sudo systemctl enable --now auditd.service
 
+# use human-readable time
+
+cat >> ~/.bashrc <<"EOF"
+alias dmesg='dmesg -HP'
+EOF
+
 exit
 ```
 
