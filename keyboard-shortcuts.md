@@ -1,6 +1,6 @@
 `
 ```
-sudo pacman -S xcape
+sudo pacman -S --needed xcape
 
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary>Escape' -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/commands/custom/<Primary><Alt>Escape' -r
@@ -27,6 +27,12 @@ EOF
 
 xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Home' -r
 xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Alt>Delete' -r
+
+# works around a bug with xfce 4.18 and xcape
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_Up' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_Down' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_Left' -r
+xfconf-query -c xfce4-keyboard-shortcuts -p '/xfwm4/custom/<Super>KP_Right' -r
 
 xfconf-query -c xfce4-keyboard-shortcuts \
   -p '/xfwm4/custom/<Super>Up' -n -t string -s tile_up_key
