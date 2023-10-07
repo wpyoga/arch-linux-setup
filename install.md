@@ -8,14 +8,8 @@ copy network settings from iso
 
 ## after installation
 
-static-ip.md
 git.md
 yay.md
 
-use pacman to install: sudo pacman -S <package>
-- bc
-- man-db
-- man-pages
-- p7zip
-- whois
+yay -S iwgtk bc man-db man-pages p7zip whois
 
