@@ -1,6 +1,6 @@
 `
 ```
-#pacman -S --needed wine-mono wine-gecko
+#yay -S --needed wine-mono wine-gecko
 
 if ! grep -qE '^zh_CN\.UTF-8 +UTF-8' /etc/locale.gen; then
   sudo tee -a /etc/locale.gen >/dev/null <<EOF

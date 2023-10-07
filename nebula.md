@@ -1,8 +1,7 @@
 `
 ```
-yay -S --needed nebula
-sudo mkdir -p /etc/nebula
-sudo chmod 700 /etc/nebula
+yay -S nebula
+sudo install -m 700 -d /etc/nebula
 
 exit
 ```

@@ -1,6 +1,6 @@
 `
 ```
-yay -S --needed vi-vim-symlink
+yay -S vi-vim-symlink
 
 grep -q '^ *source /etc/vimrc.local *$' /etc/vimrc ||
 sudo tee -a /etc/vimrc >/dev/null <<EOF
