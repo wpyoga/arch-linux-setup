@@ -11,10 +11,10 @@ copy network settings from iso
 static-ip.md
 git.md
 yay.md
-pkgfile.md
 
 use pacman to install: sudo pacman -S <package>
 - bc
+- man-db
 - man-pages
 - p7zip
 - whois
