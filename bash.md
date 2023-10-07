@@ -1,6 +1,6 @@
 `
 ```
-sudo pacman -S --needed bash-completion
+yay -S bash-completion
 
 cat >> ~/.bashrc <<"EOF"
 # ignore repeated commands and command lines starting with a space

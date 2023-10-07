@@ -1,6 +1,6 @@
 `
 ```
-sudo pacman -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-cjk noto-fonts-emoji
+yay -S ttf-dejavu ttf-liberation noto-fonts noto-fonts-cjk noto-fonts-emoji
 
 sudo tee /etc/profile.d/freetype2.sh >/dev/null <<EOF
 export FREETYPE_PROPERTIES="truetype:interpreter-version=40"

@@ -1,6 +1,6 @@
 `
 ```
-sudo pacman -S nodejs npm yarn
+yay -S nodejs npm yarn
 
 exit
 ```

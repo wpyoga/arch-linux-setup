@@ -1,7 +1,6 @@
 `
 ```
-sudo pacman -S imagemagick
-
+yay -S imagemagick
 
 exit
 ```

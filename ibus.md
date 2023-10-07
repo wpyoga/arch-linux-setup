@@ -1,6 +1,6 @@
 `
 ```
-sudo pacman -S --needed ibus ibus-libpinyin
+yay -S ibus ibus-libpinyin
 
 while read VAR; do
   sudo sed -i /etc/environment -e "\$a$VAR" -e "/${VAR%%=*}/d"
