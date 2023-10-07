@@ -3,7 +3,7 @@
 xfconf-query -c xsettings -p /Net/ThemeName -s "Adwaita"
 xfconf-query -c xsettings -p /Net/IconThemeName -s "HighContrast"
 
-xfconf-query -c xsettings -p /Xft/DPI -s 96
+xfconf-query -c xsettings -p /Xft/DPI -n -s 96
 xfconf-query -c xsettings -p /Xft/Antialias -s 1
 xfconf-query -c xsettings -p /Xft/Hinting -s 1
 xfconf-query -c xsettings -p /Xft/HintStyle -s "hintfull"
